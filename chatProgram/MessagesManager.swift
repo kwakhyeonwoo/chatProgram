@@ -8,6 +8,7 @@
 import Foundation
 import FirebaseFirestore
 import FirebaseSharedSwift
+import Firebase
 //import FirebaseFirestoreTarget
 
 class MessagesManager: ObservableObject {

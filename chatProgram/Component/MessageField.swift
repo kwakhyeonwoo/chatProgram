@@ -10,14 +10,14 @@ import SwiftUI
 struct MessageField: View {
     @EnvironmentObject var messageManager: MessagesManager
     //message의 값을 초기화 시키고 값이 변함에 따라 Binding된 text가 State의 message로 들어오게 됨
-    @State private var message : String = ""
+    @State private var messages : String = ""
     var body: some View {
         HStack{
-            CustomTextField(placeHolder: Text("메시지를 입력하세요!"), text: $message)
+            CustomTextField(placeHolder: Text("메시지를 입력하세요!"), text: $messages)
             
             Button{
-                messageManager.sendMessage(text: message)
-                message = ""
+                messageManager.sendMessage(text: messages)
+                messages = ""
             } label: {
                 Image(systemName: "paperplane.fill")
                     .foregroundColor(.white)
