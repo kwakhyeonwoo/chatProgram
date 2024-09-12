@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MessageField: View {
+    @EnvironmentObject var messageManager: MessagesManager
     //message의 값을 초기화 시키고 값이 변함에 따라 Binding된 text가 State의 message로 들어오게 됨
     @State private var message : String = ""
     var body: some View {
@@ -15,7 +16,7 @@ struct MessageField: View {
             CustomTextField(placeHolder: Text("메시지를 입력하세요!"), text: $message)
             
             Button{
-                print("message sent")
+                messageManager.sendMessage(text: message)
                 message = ""
             } label: {
                 Image(systemName: "paperplane.fill")
@@ -35,6 +36,7 @@ struct MessageField: View {
 
 #Preview {
     MessageField()
+        .environmentObject(MessagesManager())
 }
 
 struct CustomTextField: View {

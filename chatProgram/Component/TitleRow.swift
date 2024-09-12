@@ -14,19 +14,19 @@ struct TitleRow: View {
     
     var body: some View {
         HStack(spacing: 20){
-//            AsyncImage(url: imageUrl){ image in
-//                image.resizable()
-//                    .aspectRatio(contentMode: .fill)
-//                    .frame(width: 50, height: 50)
-//                    .cornerRadius(50)
-//            } placeholder: {
-//                ProgressView()
-//            }
-            Image("photo2")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 50, height: 50)
-                .cornerRadius(50)
+            AsyncImage(url: imageUrl){ image in
+                image.resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 50, height: 50)
+                    .cornerRadius(50)
+            } placeholder: {
+                ProgressView()
+            }
+//            Image("photo2")
+//                .resizable()
+//                .aspectRatio(contentMode: .fill)
+//                .frame(width: 50, height: 50)
+//                .cornerRadius(50)
             
             VStack(alignment: .leading){
                 Text(name)

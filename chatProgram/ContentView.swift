@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var messageManager = MessageManager()
+    @StateObject var messagesManager = MessagesManager()
     
     var body: some View {
         VStack {
@@ -17,7 +17,7 @@ struct ContentView: View {
                 
                 ScrollView{
                     //이미 값이 할당 되어 있는 배열에서 불러올 때는 id: \.self자기 자신을 클로저를 통해 반복을 시킨다 
-                    ForEach(messageManager.message, id: \.id) {message in
+                    ForEach(messagesManager.messages, id: \.id) {message in
                         MessageBubble(message: message)
                     }
                 }
@@ -29,10 +29,11 @@ struct ContentView: View {
             .background(Color("Peach"))
             
             MessageField()
+                .environmentObject(messagesManager)
         }
     }
 }
 
 #Preview {
-    ContentView().environmentObject(MessageManager())
+    ContentView()
 }

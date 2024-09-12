@@ -42,5 +42,5 @@ struct MessageBubble: View {
 }
 
 #Preview {
-    MessageBubble(message: Message(id: "12345", text: "Ich werde nach Deustchland fliegen", received: true, timestamp: Date()))
+    MessageBubble(message: Message(id: "12345", text: "Ich werde nach Deutschland fliegen und er a", received: false, timestamp: Date()))
 }

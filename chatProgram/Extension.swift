@@ -27,3 +27,25 @@ struct RoundedCorner: Shape{
     }
     
 }
+
+////외부 공간 클릭시 키보드 내려감 UIKit부분
+//struct KeyBoardDismissViewMainUserView : UIViewRepresentable{
+//    func makeUIView(context: Context) -> UIView {
+//        let view = UIView()
+//        let tapGesture = UITapGestureRecognizer(target: context.coordinator, action: #selector(context.coordinator.dismissKeyboard))
+//        view.addGestureRecognizer(tapGesture)
+//        return view
+//    }
+//    
+//    func updateUIView(_ uiView: UIView, context: Context) {}
+//    
+//    func makeCoordinator() -> Coordinator {
+//        return Coordinator()
+//    }
+//    
+//    class Coordinator{
+//        @objc func dismissKeyboard(){
+//            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+//        }
+//    }
+//}
