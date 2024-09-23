@@ -30,7 +30,7 @@ struct MessageBubble: View {
                 Text("\(message.timestamp.formatted(.dateTime.hour().minute()))")
                     .font(.caption2)
                     .foregroundColor(.gray)
-                    .padding(message.received ? .leading : .trailing, 25)
+                    .padding(message.received ? .leading : .trailing, 10)
             }
         }
         //누가 보내냐에 따라 왼쪽, 오른쪽 설정
@@ -42,5 +42,5 @@ struct MessageBubble: View {
 }
 
 #Preview {
-    MessageBubble(message: Message(id: "12345", text: "Ich werde nach Deutschland fliegen und er a", received: false, timestamp: Date()))
+    MessageBubble(message: Message(id: "12345", text: "Ich werde nach Deutschland fliegen", received: false, timestamp: Date()))
 }

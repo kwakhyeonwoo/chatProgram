@@ -52,7 +52,7 @@ class MessagesManager: ObservableObject {
     func sendMessage(text: String){
         do{
             //Swift에서 설정한 임의 id값을 두기 위해 UUID로 설정하고 보내는 사람은 항상 나이기 때문에 received를 false로 설정
-            let newMessage = Message(id: "\(UUID())", text: text, received: false, timestamp: Date())
+            let newMessage = Message(id: "\(UUID())", text: text, received: true, timestamp: Date())
             try db.collection("messages").document().setData(from: newMessage)
             
         } catch{

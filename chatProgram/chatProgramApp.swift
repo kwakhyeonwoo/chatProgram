@@ -18,7 +18,7 @@ struct chatProgramApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FirstPage()
         }
     }
 }

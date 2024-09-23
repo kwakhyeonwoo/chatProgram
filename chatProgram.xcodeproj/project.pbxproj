@@ -22,6 +22,7 @@
 		677EE4DA2C9062F4001A0644 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 677EE4D92C9062F4001A0644 /* FirebaseFirestore */; };
 		677EE4DC2C90724E001A0644 /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677EE4DB2C90724E001A0644 /* MessagesManager.swift */; };
 		677EE4DE2C907C0A001A0644 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 677EE4DD2C907C0A001A0644 /* GoogleService-Info.plist */; };
+		679366AF2C9CF217002C09DE /* FirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679366AE2C9CF217002C09DE /* FirstPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		677EE4D42C905B2C001A0644 /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
 		677EE4DB2C90724E001A0644 /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
 		677EE4DD2C907C0A001A0644 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		679366AE2C9CF217002C09DE /* FirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				67618F562C90194D00BB2825 /* TitleRow.swift */,
 				67618F5B2C903D9100BB2825 /* MessageBubble.swift */,
 				677EE4D42C905B2C001A0644 /* MessageField.swift */,
+				679366AE2C9CF217002C09DE /* FirstPage.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				67618F5C2C903D9100BB2825 /* MessageBubble.swift in Sources */,
 				677EE4D52C905B2C001A0644 /* MessageField.swift in Sources */,
 				67618F5E2C90575600BB2825 /* Extension.swift in Sources */,
+				679366AF2C9CF217002C09DE /* FirstPage.swift in Sources */,
 				67618F2C2C90191A00BB2825 /* chatProgramApp.swift in Sources */,
 				67618F572C90194D00BB2825 /* TitleRow.swift in Sources */,
 				677EE4DC2C90724E001A0644 /* MessagesManager.swift in Sources */,
